@@ -1,0 +1,42 @@
+// COLOR VARIABLES
+$color-primary: #7CDFFF; 
+$color-primary-dark: #70C9E5; 
+
+$color-grey-light-1: #fafaff;  
+$color-grey-light-2: #f1f1fa;
+
+$color-grey-dark-1: #555566;
+$color-grey-dark-2: #333344;
+
+
+// RESPONSIVE BREAKPOINTS
+/*$bp-largest: 75em;  //1200px
+$bp-large: 62.5em;  //1000px
+$bp-medium: 50em;  //800px
+$bp-small: 37.5em;  //600px
+$bp-smallest: 25em;  //400px*/
+
+
+*, *::before, *::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+}
+
+html {
+    box-sizing: border-box;
+    font-size: 62.5%;  //1rem = 10px;
+}
+
+body {
+    font-family: 'Nunito', sans-serif;
+    color: $color-grey-dark-2;
+    font-weight: 400;
+    line-height: 1.6;
+}
+
+.container {
+    display: grid;
+    grid-template-rows: 100vh min-content 50vw repeat(4, min-content);
+    grid-template-columns: [full-start] minmax(10rem, 1fr) [center-start] minmax(min-content, 80%) [center-end] minmax(10rem, 1fr) [full-end];
+}

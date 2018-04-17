@@ -1,0 +1,16 @@
+.footer {
+    grid-column: full-start / full-end;
+
+    background-color: $color-grey-light-2;
+
+    &__legal {
+        font-size: 1.4rem;
+        margin: 2rem auto;
+        text-align: center;
+        
+        
+    }
+
+    
+}
+
