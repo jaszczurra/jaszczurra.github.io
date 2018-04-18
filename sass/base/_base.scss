@@ -56,3 +56,8 @@ body {
         grid-template-columns: [full-start] minmax(5rem, 1fr) [center-start] minmax(min-content, 80%) [center-end] minmax(5rem, 1fr) [full-end];
     }
 }
+
+::selection {
+    background-color: $color-primary;
+    color: $color-grey-light-1;
+}

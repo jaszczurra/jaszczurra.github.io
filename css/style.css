@@ -30,6 +30,10 @@ body {
     .container {
       grid-template-columns: [full-start] minmax(5rem, 1fr) [center-start] minmax(min-content, 80%) [center-end] minmax(5rem, 1fr) [full-end]; } }
 
+::selection {
+  background-color: #7CDFFF;
+  color: #fafaff; }
+
 .heading-1, .heading-2, .heading-3 {
   font-weight: 300; }
 
@@ -495,6 +499,11 @@ body {
     transform: scale(1.2);
     background-color: rgba(124, 223, 255, 0.3);
     box-shadow: 0 0 5rem rgba(51, 51, 68, 0.4); }
+    @media (hover: none) {
+      .header__link:hover, .header__link:active {
+        transform: scale(1);
+        background-color: rgba(255, 255, 255, 0.5);
+        box-shadow: 0 0 5rem rgba(51, 51, 68, 0.3); } }
 
 .footer {
   grid-column: full-start / full-end;

@@ -78,5 +78,11 @@
         transform: scale(1.2);
         background-color: rgba($color-primary, .3);
         box-shadow: 0 0 5rem rgba($color-grey-dark-2, .4);
+
+        @media (hover: none) {
+            transform: scale(1);
+            background-color: rgba(255, 255, 255, .5);
+            box-shadow: 0 0 5rem rgba($color-grey-dark-2, .3);
+        }
     }
 }
