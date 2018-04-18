@@ -6,7 +6,7 @@
     align-items: flex-start;
     
 
-    padding: 15rem 0;
+    padding: 12rem 0;
     
     
     &-known {
@@ -43,8 +43,8 @@
             transition: all 2s;
 
             &--1 {
-                background-image: linear-gradient(to right, $color-grey-light-1 0%, 
-                                  $color-grey-light-1 80%, transparent 80%);
+                background-image: linear-gradient(to right, $color-grey-light-2 0%, 
+                                  $color-grey-light-2 80%, transparent 80%);
                 
                 
 
@@ -54,8 +54,8 @@
             }
 
             &--2 {
-                background-image: linear-gradient(to right, $color-grey-light-1 0%, 
-                                  $color-grey-light-1 80%, transparent 80%);
+                background-image: linear-gradient(to right, $color-grey-light-2 0%, 
+                                  $color-grey-light-2 80%, transparent 80%);
                 
                 &:hover::before {
                     width: 80%;
@@ -63,8 +63,8 @@
             }
 
             &--3 {
-                background-image: linear-gradient(to right, $color-grey-light-1 0%, 
-                                  $color-grey-light-1 70%, transparent 70%);
+                background-image: linear-gradient(to right, $color-grey-light-2 0%, 
+                                  $color-grey-light-2 70%, transparent 70%);
             
                 &:hover::before {
                     width: 70%;
@@ -72,8 +72,8 @@
             }
 
             &--4 {
-                background-image: linear-gradient(to right, $color-grey-light-1 0%, 
-                                  $color-grey-light-1 85%, transparent 85%);             
+                background-image: linear-gradient(to right, $color-grey-light-2 0%, 
+                                  $color-grey-light-2 85%, transparent 85%);             
             
                 &:hover::before {
                     width: 85%;
@@ -81,8 +81,8 @@
             }
 
             &--5 {
-                background-image: linear-gradient(to right, $color-grey-light-1 0%, 
-                                  $color-grey-light-1 40%, transparent 40%);           
+                background-image: linear-gradient(to right, $color-grey-light-2 0%, 
+                                  $color-grey-light-2 40%, transparent 40%);           
             
                         
                 &:hover::before {
@@ -91,8 +91,8 @@
             }
 
             &--6 {
-                background-image: linear-gradient(to right, $color-grey-light-1 0%, 
-                                  $color-grey-light-1 20%, transparent 20%); 
+                background-image: linear-gradient(to right, $color-grey-light-2 0%, 
+                                  $color-grey-light-2 20%, transparent 20%); 
             
                         
                 &:hover::before {

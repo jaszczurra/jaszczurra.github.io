@@ -1,7 +1,71 @@
 .projects {
     grid-column: full-start / full-end;
 
-    padding: 15rem 0;
+    padding: 12rem 0;
     background-color: $color-grey-light-1;
+
+    display: grid;
+    grid-template-columns: minmax(10rem, 1fr) minmax(min-content, max-content) minmax(10rem, 1fr);
+    
+
+    &__heading-3 {
+        grid-column: 2 / span 1;
+        align-self: center;
+        justify-self: center;
+    }
+    
+    &__container {
+        grid-column: 2 / span 1;
+
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+        grid-column-gap: 4rem;
+        grid-row-gap: 8rem;
+        justify-items: center;
+    }
+
+    .project {
+
+        width: 100%;
+        position: relative;
+        
+        &__photo {
+            width: 100%;
+        }
+
+        &__content {
+            padding: 0 1rem;
+            width: 100%;
+            color: $color-grey-light-1;
+            opacity: 1;
+            position: absolute;
+            top: 90%;
+            left: 50%;
+            transform: translate(-50%, 90%);
+            transition: all .4s ease-in-out;
+        }
+
+        &__name {
+            font-size: 2rem;
+            margin-bottom: 1.5rem;
+        }
+
+        &__tech {
+            font-size: 1.4rem;
+        }
+
+        &__date {
+            font-size: 1.3rem;
+        }
+    }
+    
+    .project:hover .project__content {
+        opacity: 1;
+        transform: translate(-50%, -80%);
+    }
+
+    .project:hover .project__photo {
+        filter: blur(2px) brightness(.7);
+    }
 
 }

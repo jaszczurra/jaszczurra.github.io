@@ -91,7 +91,7 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: flex-start;
-  padding: 15rem 0; }
+  padding: 12rem 0; }
   .abilities-known {
     flex: 0 1 55%;
     margin-right: 10rem;
@@ -114,27 +114,27 @@ body {
       position: relative;
       transition: all 2s; }
       .abilities-known__bar--1 {
-        background-image: linear-gradient(to right, #fafaff 0%, #fafaff 80%, transparent 80%); }
+        background-image: linear-gradient(to right, #f1f1fa 0%, #f1f1fa 80%, transparent 80%); }
         .abilities-known__bar--1:hover::before {
           width: 80%; }
       .abilities-known__bar--2 {
-        background-image: linear-gradient(to right, #fafaff 0%, #fafaff 80%, transparent 80%); }
+        background-image: linear-gradient(to right, #f1f1fa 0%, #f1f1fa 80%, transparent 80%); }
         .abilities-known__bar--2:hover::before {
           width: 80%; }
       .abilities-known__bar--3 {
-        background-image: linear-gradient(to right, #fafaff 0%, #fafaff 70%, transparent 70%); }
+        background-image: linear-gradient(to right, #f1f1fa 0%, #f1f1fa 70%, transparent 70%); }
         .abilities-known__bar--3:hover::before {
           width: 70%; }
       .abilities-known__bar--4 {
-        background-image: linear-gradient(to right, #fafaff 0%, #fafaff 85%, transparent 85%); }
+        background-image: linear-gradient(to right, #f1f1fa 0%, #f1f1fa 85%, transparent 85%); }
         .abilities-known__bar--4:hover::before {
           width: 85%; }
       .abilities-known__bar--5 {
-        background-image: linear-gradient(to right, #fafaff 0%, #fafaff 40%, transparent 40%); }
+        background-image: linear-gradient(to right, #f1f1fa 0%, #f1f1fa 40%, transparent 40%); }
         .abilities-known__bar--5:hover::before {
           width: 40%; }
       .abilities-known__bar--6 {
-        background-image: linear-gradient(to right, #fafaff 0%, #fafaff 20%, transparent 20%); }
+        background-image: linear-gradient(to right, #f1f1fa 0%, #f1f1fa 20%, transparent 20%); }
         .abilities-known__bar--6:hover::before {
           width: 20%; }
       .abilities-known__bar::before {
@@ -208,11 +208,11 @@ body {
   flex-direction: column; }
   .contact__list {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(50%, 1fr));
-    grid-row-gap: 3rem;
+    grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
+    grid-gap: 3rem;
     list-style: none; }
   .contact__item {
-    flex: 0 1 50%;
+    width: 100%;
     display: flex;
     flex-direction: column;
     align-items: center; }
@@ -295,8 +295,48 @@ body {
 
 .projects {
   grid-column: full-start / full-end;
-  padding: 15rem 0;
-  background-color: #fafaff; }
+  padding: 12rem 0;
+  background-color: #fafaff;
+  display: grid;
+  grid-template-columns: minmax(10rem, 1fr) minmax(min-content, max-content) minmax(10rem, 1fr); }
+  .projects__heading-3 {
+    grid-column: 2 / span 1;
+    align-self: center;
+    justify-self: center; }
+  .projects__container {
+    grid-column: 2 / span 1;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+    grid-column-gap: 4rem;
+    grid-row-gap: 8rem;
+    justify-items: center; }
+  .projects .project {
+    width: 100%;
+    position: relative; }
+    .projects .project__photo {
+      width: 100%; }
+    .projects .project__content {
+      padding: 0 1rem;
+      width: 100%;
+      color: #fafaff;
+      opacity: 1;
+      position: absolute;
+      top: 90%;
+      left: 50%;
+      transform: translate(-50%, 90%);
+      transition: all .4s ease-in-out; }
+    .projects .project__name {
+      font-size: 2rem;
+      margin-bottom: 1.5rem; }
+    .projects .project__tech {
+      font-size: 1.4rem; }
+    .projects .project__date {
+      font-size: 1.3rem; }
+  .projects .project:hover .project__content {
+    opacity: 1;
+    transform: translate(-50%, -80%); }
+  .projects .project:hover .project__photo {
+    filter: blur(2px) brightness(0.7); }
 
 .header {
   grid-column: full-start / full-end;

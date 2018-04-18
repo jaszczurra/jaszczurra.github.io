@@ -34,10 +34,10 @@
 
             <nav class="header__nav">
                 <ul class="header__list">
-                    <li class="header__item"><a href="#about" class="header__link">About</a></li>
-                    <li class="header__item"><a href="#abilities" class="header__link">Abilities</a></li>
-                    <li class="header__item"><a href="#projects" class="header__link">Projects</a></li>
-                    <li class="header__item"><a href="#contact" class="header__link">Contact</a></li>
+                    <li class="header__item page-scroll"><a href="#about" class="header__link">About</a></li>
+                    <li class="header__item page-scroll"><a href="#abilities" class="header__link">Abilities</a></li>
+                    <li class="header__item page-scroll"><a href="#projects" class="header__link">Projects</a></li>
+                    <li class="header__item page-scroll"><a href="#contact" class="header__link">Contact</a></li>
                 </ul>
             </nav>
         </header>
@@ -192,7 +192,57 @@
         </section>
 
         <section class="projects" id="projects">
-            PROJECTS
+            <h3 class="heading-3 projects__heading-3 mb-hg">My projects</h3>
+            <div class="projects__container">
+                <div class="project"><a href="https://jaszczurra.github.io/Nexter/">
+                    <img src="img/proj-nexter.jpg" alt="Nexter photo" class="project__photo">
+                    <div class="project__content">
+                        <div class="project__name">Nexter</div>
+                        <div class="project__tech">HTML5, CSS3, CSS Grid, Flexbox, Sass</div>
+                        <div class="project__date">2018, April</div>
+                    </div>
+                </a></div>
+                <div class="project"><a href="https://jaszczurra.github.io/Trillo/">
+                    <img src="img/proj-trillo.jpg" alt="Trillo photo" class="project__photo">
+                    <div class="project__content">
+                        <div class="project__name">Trillo</div>
+                        <div class="project__tech">HTML5, CSS3, Flexbox, Sass</div>
+                        <div class="project__date">2018, March</div>
+                    </div>
+                </a></div>
+                <div class="project"><a href="https://jaszczurra.github.io/Natours/">
+                    <img src="img/proj-natours.jpg" alt="Natours photo" class="project__photo">
+                    <div class="project__content">
+                        <div class="project__name">Natours</div>
+                        <div class="project__tech">HTML5, CSS3, Sass</div>
+                        <div class="project__date">2018, March</div>
+                    </div>
+                </a></div>
+                <div class="project"><a href="https://jaszczurra.github.io/Business-Theme/">
+                    <img src="img/proj-businesstheme.jpg" alt="Business Theme photo" class="project__photo">
+                    <div class="project__content">
+                        <div class="project__name">Business Theme</div>
+                        <div class="project__tech">HTML5, CSS3, Bootstrap, Sass</div>
+                        <div class="project__date">2017, August</div>
+                    </div>
+                </a></div>
+                <div class="project"><a href="https://jaszczurra.github.io/RGB-Game/">
+                    <img src="img/proj-colorgame.jpg" alt="Color Game photo" class="project__photo">
+                    <div class="project__content">
+                        <div class="project__name">Color Game</div>
+                        <div class="project__tech">HTML5, CSS3, Bootstrap, JavaScript</div>
+                        <div class="project__date">2017, August</div>
+                    </div>
+                </a></div>
+                <div class="project"><a href="https://jaszczurra.github.io/Agency-Landing-Page/">
+                    <img src="img/proj-agencylandingpage.jpg" alt="Agency Landing Page photo" class="project__photo">
+                    <div class="project__content">
+                        <div class="project__name">Agency Landing Page</div>
+                        <div class="project__tech">HTML5, CSS3, LESS</div>
+                        <div class="project__date">2018, July</div>
+                    </div>
+                </a></div>
+            </div>
         </section>
 
         <section class="contact" id="contact">
@@ -208,11 +258,11 @@
                 </li>
                 <li class="contact__item">
                     <i class="contact__icon icon ion-social-linkedin-outline"></i>
-                    <span class="contact__text"><a href="www.linkedin.com/in/olga-bednarczyk-057808147/" class="contact__link">LinkedIn Profile</a></span>
+                    <span class="contact__text"><a href="https://www.linkedin.com/in/olga-bednarczyk-057808147/" class="contact__link">LinkedIn Profile</a></span>
                 </li>
                 <li class="contact__item">
                     <i class="contact__icon icon ion-social-github-outline"></i>
-                    <span class="contact__text"><a href="www.jaszczurra.github.io" class="contact__link">GitHub Profile</a></span>
+                    <span class="contact__text"><a href="https://github.com/jaszczurra" class="contact__link">GitHub Profile</a></span>
                 </li>
             </ul>
             
@@ -222,5 +272,8 @@
             <p class="footer__legal">&copy; 2018 by Olga Bednarczyk. All rights reserved.</p>
         </footer>
 
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+        <script src="http://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>
+        <script src="js/main.js"></script>
     </body>
 </html>
