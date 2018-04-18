@@ -20,7 +20,7 @@ body {
 
 .container {
   display: grid;
-  grid-template-rows: 100vh min-content 50vw repeat(4, min-content);
+  grid-template-rows: 100vh min-content 42vw repeat(4, min-content);
   grid-template-columns: [full-start] minmax(10rem, 1fr) [center-start] minmax(min-content, 80%) [center-end] minmax(10rem, 1fr) [full-end]; }
 
 .heading-1, .heading-2, .heading-3 {
