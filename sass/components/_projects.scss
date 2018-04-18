@@ -6,6 +6,12 @@
 
     display: grid;
     grid-template-columns: minmax(10rem, 1fr) minmax(min-content, max-content) minmax(10rem, 1fr);
+
+    @media only screen and (max-width: $bp-smallest) {
+        grid-template-columns: minmax(5rem, 1fr) minmax(min-content, max-content) minmax(5rem, 1fr);
+
+        padding: 10rem 0;
+    }
     
 
     &__heading-3 {
@@ -37,35 +43,67 @@
             padding: 0 1rem;
             width: 100%;
             color: $color-grey-light-1;
-            opacity: 1;
+            opacity: 0;
             position: absolute;
             top: 90%;
             left: 50%;
             transform: translate(-50%, 90%);
             transition: all .4s ease-in-out;
+
+            @media (hover: none) {
+                padding: 1rem;
+                opacity: 1;
+                color: $color-grey-dark-2;
+                position: static;
+                transform: translate(0, 0);
+                transition: none;
+            }
         }
 
         &__name {
             font-size: 2rem;
-            margin-bottom: 1.5rem;
+            margin-bottom: .9rem;
+
+            @media only screen and (max-width: $bp-small) {
+                font-size: 2.2rem;
+            }
         }
 
         &__tech {
+            display: inline-block;
             font-size: 1.4rem;
+            padding-top: .7rem;
+            border-top: 1px solid currentColor;
+
+            @media only screen and (max-width: $bp-small) {
+                font-size: 1.6rem;
+            }
         }
 
         &__date {
             font-size: 1.3rem;
+
+            @media only screen and (max-width: $bp-small) {
+                font-size: 1.4rem;
+            }
         }
     }
     
     .project:hover .project__content {
         opacity: 1;
         transform: translate(-50%, -80%);
+
+        @media (hover: none) {
+            transform: translate(0, 0);
+        }
     }
 
     .project:hover .project__photo {
         filter: blur(2px) brightness(.7);
+
+        @media (hover: none) {
+            filter: none;
+        }
     }
 
 }

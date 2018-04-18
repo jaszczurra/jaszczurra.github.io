@@ -9,12 +9,12 @@ $color-grey-dark-1: #555566;
 $color-grey-dark-2: #333344;
 
 
-// RESPONSIVE BREAKPOINTS
-/*$bp-largest: 75em;  //1200px
+//RESPONSIVE BREAKPOINTS
+$bp-largest: 75em;  //1200px
 $bp-large: 62.5em;  //1000px
 $bp-medium: 50em;  //800px
 $bp-small: 37.5em;  //600px
-$bp-smallest: 25em;  //400px*/
+$bp-smallest: 25em;  //400px
 
 
 *, *::before, *::after {
@@ -25,7 +25,19 @@ $bp-smallest: 25em;  //400px*/
 
 html {
     box-sizing: border-box;
-    font-size: 62.5%;  //1rem = 10px;
+    font-size: 62.5%;  //1rem = 10px
+
+    @media only screen and (max-width: $bp-largest) {
+        font-size: 56.25%;  //1rem = 9px
+    }
+
+    @media only screen and (max-width: $bp-medium) {
+        font-size: 50%;  //1rem = 8px
+    }
+
+    @media only screen and (max-width: $bp-small) {
+        font-size: 43.75%;  //1rem = 7px
+    }
 }
 
 body {
@@ -37,6 +49,10 @@ body {
 
 .container {
     display: grid;
-    grid-template-rows: 100vh min-content 42vw repeat(4, min-content);
+    grid-template-rows: 100vh min-content 51vw repeat(4, min-content);
     grid-template-columns: [full-start] minmax(10rem, 1fr) [center-start] minmax(min-content, 80%) [center-end] minmax(10rem, 1fr) [full-end];
+
+    @media only screen and (max-width: $bp-smallest) {
+        grid-template-columns: [full-start] minmax(5rem, 1fr) [center-start] minmax(min-content, 80%) [center-end] minmax(5rem, 1fr) [full-end];
+    }
 }

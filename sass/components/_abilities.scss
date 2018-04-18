@@ -7,13 +7,29 @@
     
 
     padding: 12rem 0;
-    
+
+    @media only screen and (max-width: $bp-medium) {
+        flex-direction: column;
+        align-items: center;
+    }    
+
+    @media only screen and (max-width: $bp-smallest) {
+        padding: 10rem 0;
+    } 
     
     &-known {
         flex: 0 1 55%;
         margin-right: 10rem;
         padding-right: 10rem;
         border-right: 1px solid $color-grey-light-2;
+
+        @media only screen and (max-width: $bp-medium) {
+            width: 100%;
+            margin: 0 0 5rem 0;
+            padding: 0 0 5rem 0;
+            border-right: none;
+            border-bottom: 1px solid $color-grey-light-2;
+        } 
 
         &__list {
             list-style: none;
@@ -42,11 +58,18 @@
             position: relative;
             transition: all 2s;
 
+            @media (hover: none) {
+                border: 1px solid $color-primary;
+            }
+
             &--1 {
                 background-image: linear-gradient(to right, $color-grey-light-2 0%, 
                                   $color-grey-light-2 80%, transparent 80%);
                 
-                
+                @media (hover: none) {
+                    background-image: linear-gradient(to right, $color-primary 0%, 
+                                      $color-primary 80%, transparent 80%);
+                }
 
                 &:hover::before {
                     width: 80%;
@@ -56,7 +79,12 @@
             &--2 {
                 background-image: linear-gradient(to right, $color-grey-light-2 0%, 
                                   $color-grey-light-2 80%, transparent 80%);
-                
+
+                @media (hover: none) {
+                    background-image: linear-gradient(to right, $color-primary 0%, 
+                                      $color-primary 80%, transparent 80%);
+                }
+
                 &:hover::before {
                     width: 80%;
                 }
@@ -66,6 +94,11 @@
                 background-image: linear-gradient(to right, $color-grey-light-2 0%, 
                                   $color-grey-light-2 70%, transparent 70%);
             
+                @media (hover: none) {
+                    background-image: linear-gradient(to right, $color-primary 0%, 
+                                      $color-primary 70%, transparent 70%);
+                }
+
                 &:hover::before {
                     width: 70%;
                 }
@@ -75,6 +108,11 @@
                 background-image: linear-gradient(to right, $color-grey-light-2 0%, 
                                   $color-grey-light-2 85%, transparent 85%);             
             
+                @media (hover: none) {
+                    background-image: linear-gradient(to right, $color-primary 0%, 
+                                      $color-primary 85%, transparent 85%);
+                }
+
                 &:hover::before {
                     width: 85%;
                 }            
@@ -84,7 +122,12 @@
                 background-image: linear-gradient(to right, $color-grey-light-2 0%, 
                                   $color-grey-light-2 40%, transparent 40%);           
             
-                        
+                    
+                @media (hover: none) {
+                    background-image: linear-gradient(to right, $color-primary 0%, 
+                                      $color-primary 40%, transparent 40%);
+                }
+
                 &:hover::before {
                     width: 40%;
                 }
@@ -94,7 +137,12 @@
                 background-image: linear-gradient(to right, $color-grey-light-2 0%, 
                                   $color-grey-light-2 20%, transparent 20%); 
             
-                        
+                     
+                @media (hover: none) {
+                    background-image: linear-gradient(to right, $color-primary 0%, 
+                                      $color-primary 20%, transparent 20%);
+                }
+
                 &:hover::before {
                     width: 20%;
                 }
@@ -121,6 +169,10 @@
 
     &-familiar {
         flex: 0 1 45%;
+
+        @media only screen and (max-width: $bp-medium) {
+            width: 100%;
+        } 
 
         &__list {
             list-style: none;
