@@ -494,7 +494,9 @@ body {
     backface-visibility: hidden; }
     @media only screen and (max-width: 50em) {
       .header__link:link, .header__link:visited {
-        padding: .8rem 2rem;
+        padding: .8rem 2rem; } }
+    @media only screen and (max-width: 37.5em) {
+      .header__link:link, .header__link:visited {
         width: 80%;
         text-align: center; } }
   .header__link:hover, .header__link:active {
